@@ -76,7 +76,29 @@
   }
 }
 
+@font-face {
+  font-family: 'konstanz';
+  src: url('../Fonts/Fontspring-DEMO-konstanz-semibold.otf')
+}
+
+@font-face {
+  font-family: 'konstanz-light';
+  src: url('../Fonts/Fontspring-DEMO-konstanz-light.otf')
+}
+
+@font-face {
+  font-family: 'konstanz-thin';
+  src: url('../Fonts/Fontspring-DEMO-konstanz-thin.otf')
+}
+
+@font-face {
+  font-family: 'konstanz-regular';
+  src: url('../Fonts/Fontspring-DEMO-konstanz-regular.otf')
+}
+
+
 body {
+  
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -104,9 +126,10 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Kosugi Maru";
+  font-family: "konstanz-regular";
   font-weight: 700;
   line-height: 1.2;
+  
 }
 
 h1, .h1 {
@@ -11307,13 +11330,16 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  color: #000000 !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 30px;
-  font-family:'Kumbh Sans', sans-serif;
+  font-family:'konstanz-light';
   margin-bottom: 4rem;
+ 
 }
 
 @media (min-width: 768px) {
@@ -11321,14 +11347,17 @@ p {
     padding: 9rem 0;
   }
 }
+
+
 .btn-xl {
   padding: 1.25rem 2.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "konstanz-regular";
   font-size: 1.125rem;
   font-weight: 700;
 }
 
 .btn-social {
+  
   height: 2.5rem;
   width: 2.5rem;
   display: inline-flex;
@@ -11337,6 +11366,9 @@ p {
   padding: 0;
   border-radius: 100%;
 }
+
+
+
 
 #mainNav {
   padding-top: 1rem;
@@ -11348,28 +11380,31 @@ p {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
-  font-family: "Kosugi Maru";
-  text-transform: uppercase;
+  font-family: "konstanz";
   font-weight: 700;
- 
+
 }
+
+
 #mainNav .navbar-brand {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "konstanz";
   font-weight: 700;
   letter-spacing: 0.0625em;
-  text-transform: uppercase;
+  
 }
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "Kosugi Maru";
+  font-family: "konstanz";
+  text-transform: capitalize;
   font-size: 1.10rem;
-  color:#333232;
+  color:#5B5B5B;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #151A66;
+  color: #075A69;
+  
 }
 
 @media (min-width: 992px) {
@@ -11412,9 +11447,14 @@ p {
   }
 }
 
+
+
+
+
 .btn-primary {
-  border-color:#151A66;
-  background-color:#151A66;
+  border: 3px solid #000000;
+  border-color:#fff;
+  background-color:#075A69;
   border-radius: 10px;  
 }
 
@@ -11437,14 +11477,14 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: left;
   color: #fff;
-  background-image: url("../banner.png");
+  background-image: url("../bg01.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
-  color: #333232;
+  color: #000000;
   font-size: 60px !important;
   font-weight: 400px;
   font-style: normal !important;
@@ -11454,23 +11494,24 @@ header.masthead .masthead-subheading {
   font-family: "Julius Sans One";
 }
 header.masthead .masthead-heading {
-  color: #333232;
+  color: #000000;
   font-size: 60px !important;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
   margin-right: 5px;
   font-family: 'Zilla Slab Highlight', cursive;
+  border-radius: 2px;
 }
 
 header.masthead .masthead-content {
-  color: #333232;
+  color: #000000;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   margin-top: -2rem ;
   margin-bottom: 3rem;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'konstanz-light';
 }
 
 @media (min-width: 768px) {
@@ -11522,18 +11563,30 @@ header.masthead .masthead-content {
 /*highlight-skill section*/
 
 mark {
-  color: #fff;
-  background-color: #333232;
+  color: #075A69;
+  background-color: #F8F9FA;
+  
+}
+
+.section-heading mark {
+  color: #075A69;
+  background-color: #F8F9FA;
 }
 
 
 .col-md-4 .text-muted {
-  font-family:'Kumbh Sans', sans-serif;
+  font-family:'konstanz-light';
+  color: #000000 !important;
  }
 
 
   
+/*portfolio section*/
 
+#portfolio .container {
+  display: cover;
+  background-color: #F6F6F6;
+}
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
@@ -11569,7 +11622,7 @@ mark {
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: "Kosugi Maru";
+  font-family: "konstanz-regular";
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -11804,7 +11857,7 @@ mark {
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #000000;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -11812,53 +11865,16 @@ section#contact {
 section#contact .section-heading {
   color: #fff;
 }
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
+
+.btn-social{
+  background-color: #075A69;
+
 }
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
+
 
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "konstanz-regular";
 }
+
